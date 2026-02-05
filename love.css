@@ -1,0 +1,126 @@
+body {
+    margin: 2rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lavender; /* keep your background */
+}
+
+
+.heading{
+    color: royalblue;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 2.7rem;
+}
+
+.box {
+    background-color: white;
+    width: auto;
+    height: auto;
+    border: 2px solid skyblue;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#startBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgb(98, 201, 243);
+    border: none;
+    box-shadow: 2px 2px 10px rgba(67, 181, 241, 0.25);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+}
+
+.yes-button, .no-button {
+    border: 1px solid skyblue;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.yes-button {
+    background-color: skyblue;
+}
+
+.on-yes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.heading-1 {
+    color: royalblue;
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    margin-top: 2rem;
+}   
+
+.message {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #333;
+}
+
+
+.love-item img,
+.love-item video {
+    width: 320px;
+    max-width: 90%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(67, 181, 241, 0.25);
+}
+
+.love-item video {
+    aspect-ratio: 1 / 1;
+}
+
+
+.love-item {
+    display: none;
+}
+
+.love-item.show {
+    display: block;
+    animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.hidden {
+    display: none;
+}
